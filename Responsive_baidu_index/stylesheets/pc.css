@@ -1,0 +1,221 @@
+
+
+@media only screen and (min-width: 1029px) {
+    .pc {
+        display: block;
+
+
+    }
+    .mobile {
+        display: none;
+    }
+    .ipad{
+    	display: none;
+    }
+}
+
+
+
+html body {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.wrapper {
+    height: 100%;
+    min-width: 810px;
+    min-height: 600px;
+}
+
+
+.header .nav a {
+    color: #333;
+    font-weight: 700;
+    line-height: 65px;
+    margin-left: 15px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.header .nav a:hover {
+    color: #00c;
+}
+
+
+/*更多产品*/
+
+.header .nav .more {
+    position: absolute;
+    top: 20px;
+    right: 14px;
+    width: 88px;
+    height: 24px;
+    float: left;
+    color: #fff;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    border-bottom: 1px solid #38f;
+    text-decoration: none;
+}
+
+.header .nav .more:hover {
+    color: #ffffff;
+    background-color:
+}
+
+.header {
+    overflow: hidden;
+}
+
+.header .nav {
+    width: 500px;
+  
+    float: right;
+}
+
+
+/*主体部分*/
+
+.content {
+    top: 80px;
+    width: 100%;
+    *top: 10%;
+    font-size: 0px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.form1 {
+    margin-top: 30px;
+}
+
+.content input {
+    border: 1px solid #a5a5a5;
+    font-family: 微软雅黑;
+     outline: 0;/*去掉边框*/
+    text-indent: 5px;
+    /*输入框空10像素*/
+    vertical-align: middle;
+    /*使输入框和按钮对齐*/
+    border-right-width: 0;
+    font-size: 18px;
+    width: 539px;
+    height: 18px;
+    padding: 8px;
+}
+
+.content button {
+    cursor: pointer;
+    /*鼠标放在按钮上出现手状*/
+    vertical-align: middle;
+    /*使输入框和按钮对齐*/
+    width: 100px;
+    height: 36px;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #3385ff;
+    border: none;
+}
+
+.content button:hover {
+    background-color: #317ef3;
+}
+
+.content input:hover {
+    border-color: #666 transparent #666 #666;
+}
+
+.content input:focus {
+    border-color: #3385ff transparent #3385ff #3385ff;
+}
+
+
+/*底部*/
+
+.footer {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 44px;
+    bottom: 5%;
+}
+
+.img_QRcode {
+    display: inline-block;
+    _zoom: 1;
+    _display: inline;
+    *display: inline;
+    _vertical-align: middle;
+}
+
+.img_QRcode2 {
+    _vertical-align: middle;
+    display: inline-block;
+    _zoom: 1;
+    _display: inline;
+    *display: inline;
+}
+
+.img_QRcode-text {
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 12px;
+    color: #666;
+    display: inline-block;
+    _zoom: 1;
+    _display: inline;
+    *display: inline;
+}
+
+.img_QRcode2-text {
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 12px;
+    color: #666;
+    display: inline-block;
+    _zoom: 1;
+    _display: inline;
+    *display: inline;
+}
+
+.img_QRcode-img {
+    display: inline-block;
+    _zoom: 1;
+    _display: inline;
+    *display: inline;
+}
+
+.img_QRcode2-img {
+    display: inline-block;
+    _zoom: 1;
+    _display: inline;
+    *display: inline;
+}
+
+.set_index {
+    margin: 0;
+    padding: 0;
+}
+
+.bottom {
+    display: inline-block;
+    _zoom: 1;
+    _display: inline;
+    *display: inline;
+    _vertical-align: middle;
+    _line-height: 0px; 
+    text-align: left ; 
+    line-height: 6px;
+    font-size: 12px;
+    color: #666666;
+    margin-left: 12px;
+}
+
+.bottom a {
+    color: inherit;
+}

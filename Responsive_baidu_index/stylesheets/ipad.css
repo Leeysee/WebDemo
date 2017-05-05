@@ -1,0 +1,318 @@
+html {
+    font-family: Verdana, 'Lantinghei SC', 'Hiragino Sans GB', 'Microsoft Yahei', Helvetica, arial, 宋体, sans-serif;
+    font-size: 62.5%
+}
+
+
+.ipad div {
+    display: block;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .pc {
+        display: none;
+    }
+    .mobile {
+        display: none;
+    }
+    .ipad {
+        display: block;
+    }
+}
+
+
+/*顶部banner显示*/
+
+.top_banner_link {
+    background: url(../images_ipad/top_banner.png) no-repeat;
+    background-position: top center;
+    background-size: 1024px 55px;
+    width: 100%;
+    display: inline-block;
+    height: 55px;
+    margin: 0 auto;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.banner-close {
+    float: right;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    right: 5px;
+    top: 7px;
+    position: absolute;
+    display: inline-block;
+}
+
+.close-r {
+    background-color: #f5fafd;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 17px;
+    -webkit-transform: rotate(45deg);
+}
+
+.close-l {
+    background-color: #f5fafd;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 17px;
+    -webkit-transform: rotate(-45deg);
+}
+
+
+/*顶部banner end*/
+
+
+/*header logo上面图标部分*/
+
+.header_icon_warpper {
+    height: 52px;
+}
+
+.header_icon {
+    float: right;
+    margin-right: 0;
+}
+
+.header_icon div {
+    height: 52px;
+    float: left;
+    width: 60px;
+    margin-right: 0;
+}
+
+.header_icon_login {
+    background: url(../images_ipad/icon.png)0 0 no-repeat;
+    background-size: 200px auto;
+    background-position: 0 center;
+}
+
+.header_icon_set {
+    background: url(../images_ipad/icon.png)0 0 no-repeat;
+    background-size: 200px auto;
+    background-position: -50px center;
+}
+
+.header_icon_more {
+    background: url(../images_ipad/icon.png)0 0 no-repeat;
+    background-size: 200px auto;
+    background-position: -100px center;
+}
+
+.header_logo {
+    text-align: center;
+    margin: 100px auto 0 0;
+}
+
+
+/*header logo上面图标部分end*/
+
+
+/*搜索部分*/
+
+.header_search {
+    font-size: 0;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.header_search input {
+    border: 1px solid #2d78f4;
+    margin-top: 5%;
+    width: 538px;
+    height: 46px;
+    display: inline-block;
+    background: #fff;
+    outline: 0;
+    text-indent: 10px;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.header_search button {
+    width: 100px;
+    height: 46px;
+    margin-top: 5%;
+    color: #ffffff;
+    font-size: 2rem;
+    background-color: #3385ff;
+    border: none;
+    vertical-align: middle;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+
+/*搜索部分end*/
+
+
+/*content部分*/
+
+.ipad_content {
+    width: 100%;
+    margin-top: 15%;
+}
+
+.nav_warpper {
+    box-shadow: 0px 2px 15px 0px #e1e1e1;
+    margin: 0 auto;
+    width: 640px;
+    height: 52px;
+    font-size: 0;
+}
+
+.nav_warpper nav a i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+
+.nav_warpper nav:nth-child(1) i {
+    background: url(../images_ipad/tb.jpg) no-repeat center;
+}
+
+.nav_warpper nav:nth-child(2) i {
+    background: url(../images_ipad/vip.jpg) no-repeat center;
+}
+
+.nav_warpper nav:nth-child(3) i {
+    background: url(../images_ipad/vip.jpg) no-repeat center;
+}
+
+.nav_warpper nav:nth-child(4) i {
+    background: url(../images_ipad/gj.jpg) no-repeat center;
+}
+
+.nav_warpper nav:nth-child(5) i {
+    background: url(../images_ipad/fh.jpg) no-repeat center;
+}
+
+.nav_warpper nav:nth-child(6) i {
+    background: url(../images_ipad/nm.jpg) no-repeat center;
+    background-size: 16px 16px;
+}
+
+.nav_warpper nav:last-child {
+    margin-right: -2px;
+}
+
+.ipad_content nav {
+    text-align: center;
+    line-height: 45px;
+    margin-left: -1px;
+    border: 1px solid #efefef;
+    width: 108px;
+    height: 52px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.ipad_content nav a {
+    font-size: 1.5rem;
+    color: #666;
+    text-decoration: none;
+}
+
+
+/*news*/
+
+.news {
+    margin-top: 4%;
+}
+
+.newsh5 {
+    border-left-color: transparent !important;
+    border-right-color: transparent!important;
+    border-top-color: transparent!important;
+    font-family: arial, "华文细黑";
+    font-size: 2rem;
+    list-style: none;
+}
+
+.newsh5 a {
+    color: #666 !important;
+}
+
+.newtext {
+    margin-left: 7px;
+    margin-top: -2px;
+    height: 18px;
+    width: 18px;
+    line-height: 18px;
+    background: #f13f40;
+    color: #fff;
+    font-size: 11px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.news ul {
+    box-shadow: 0px 2px 15#px 0px #e1e1e1;
+    position: relative;
+    padding: 0px;
+    margin: 0 auto;
+    width: 640px;
+    font-size: 0;
+}
+
+.news ul li {
+    list-style: none;
+    width: 212px;
+    height: 50px;
+    border: 1px solid #efefef;
+    margin-left: -1px;
+    margin-top: -1px;
+    text-align: left;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.news ul li a {
+    line-height: 50px;
+    margin-left: 22px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #333;
+    font-family: arial, "华文细黑";
+}
+
+
+/*news end*/
+
+.downloadbaidu {
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+.download_text p {
+    color: #00c;
+    text-decoration: underline;
+    line-height: 60px;
+    font-size: 1.3rem;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+}
+
+.copyright p {
+    color: #C6C9CD;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+
+/*content部分end*/

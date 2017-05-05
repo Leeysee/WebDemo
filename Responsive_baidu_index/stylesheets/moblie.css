@@ -1,0 +1,337 @@
+.moblie_warpper {
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+}
+
+.moblie div {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 602px) {
+    .pc {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .ipad {
+        display: none;
+    }
+}
+
+.moblie {
+    width: 100%
+}
+
+.top_weather {
+    width: 100%;
+}
+
+.weather {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.today_weather {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.today_weather i {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background: url(../images_moblie/weather.png);
+}
+
+.temperature {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    font-size: 29px;
+    color: #999;
+    float: left;
+    font-weight: 300;
+    box-sizing: border-box;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.area_atmosphere {
+    vertical-align: middle;
+    display: inline-block;
+    float: left;
+    margin-top: 5px;
+}
+
+.area_atmosphere p {
+    height: 2px;
+    line-height: 0px;
+    font-size: 10px;
+    color: #999;
+    margin-left: 12px;
+}
+
+.icon_down {
+    display: inline-block;
+}
+
+.moblie_login {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images_moblie/user_icon.png);
+    background-size: 25px 25px;
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.moblie_header {
+    width: 100%;
+    text-align: center;
+}
+
+.moblie_logo {
+    padding-bottom: 16px;
+    background-color: #f8f8f8;
+}
+
+.mobile_header_search {
+    font-size: 0;
+}
+
+.mobile_header_search input {
+    border: 1px solid #d2d2d2;
+    font-family: 微软雅黑;
+    text-indent: 5px;
+    /*输入框空10像素*/
+    vertical-align: middle;
+    /*使输入框和按钮对齐*/
+    border-right-width: 0;
+    font-size: 12px;
+    min-width: 65%;
+    height: 45px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.mobile_header_search button {
+    cursor: pointer;
+    /*鼠标放在按钮上出现手状*/
+    vertical-align: middle;
+    /*使输入框和按钮对齐*/
+    width: 25%;
+    height: 49px;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #3385ff;
+    border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.moblie_content {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.link_container {
+    margin: 0 auto;
+    width: 90%;
+    height: 43px;
+}
+
+.link_container a {
+    width: 9.5%;
+    height: 43px;
+    display: block;
+    float: left;
+    color: #999;
+    text-decoration: none;
+}
+.link_container a:last-child{
+    margin-right: -100px;
+}
+
+.link_container span {
+    display: block;
+    margin-top: 6px;
+}
+
+
+.link_container a:nth-child(n) i {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-size: 22px auto;
+}
+
+.link_container a:nth-child(n+2) {
+    margin-left: 9%;
+}
+
+.link_container a:nth-child(1) i {
+    background: url(../images_moblie/a.png);
+    background-size: 22px auto;
+    background-position: 0 -264px;
+}
+
+.link_container a:nth-child(2) i {
+    background: url(../images_moblie/a.png);
+    background-size: 22px auto;
+    background-position: 0 -396px;
+}
+
+.link_container a:nth-child(3) i {
+    background: url(../images_moblie/a.png);
+    background-size: 22px auto;
+    background-position: 0 -330px;
+}
+
+.link_container a:nth-child(4) i {
+    background: url(../images_moblie/a.png);
+    background-size: 22px auto;
+    background-position: 0 -462px;
+}
+
+.link_container a:nth-child(5) i {
+    background: url(../images_moblie/a.png);
+    background-size: 22px auto;
+    background-position: 0 -418px;
+}
+
+.link_container a:nth-child(6) i {
+    background: url(../images_moblie/a.png);
+    background-size: 22px auto;
+    background-position: 0 -308px;
+}
+
+.moblie_news_container {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.moblie_news {
+    margin: 0 auto;
+    width: 90%
+}
+
+.moblie_news h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #333;
+    font-size: 2rem;
+    line-height: 26px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.moblie_news_images img {
+    width: 100%;
+    height: 100%;
+}
+
+.moblie_news {
+    margin-top: 20px;
+}
+
+.moblie_news_images div {
+    font-size: 0;
+    display: inline-block;
+    width: 33.205%;
+    margin-right: -3px;
+    height: auto;
+    position: relative;
+    background-color: green;
+}
+
+.moblie_news span {
+    margin-top: 8px;
+    margin-right: 8px;
+    font-size: 13px;
+    color: #999;
+    display: inline-block;
+}
+
+.footer_warpper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 53px;
+    background: #ffffff;
+    opacity: 1;
+    border-top: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+
+.float_l {
+    float: left;
+    height: 53px;
+    width: 200px;
+}
+
+.float_r {
+    float: right;
+    height: 53px;
+    width: 100px;
+}
+
+.close {height: 53px;
+    float: left;
+    width: 40px;
+    background: url(../images_moblie/close.png) no-repeat 50% 50%;
+    background-size: 20px 20px;
+}
+.moblie_logo2{
+    float: left;
+    height: 53px;
+    width: 40px;
+  background-color: red;
+    background: url(../images_moblie/moblielogo2.png) no-repeat 50% 50%;
+    background-size: 36px 36px;
+}
+.moblie_baidu{
+    float: left;
+    margin-left: 10px;
+    height: 53px;
+  
+}
+.moblie_baidu p:first-child{
+    font-weight: 800;
+    font-size: 16px;
+    
+    line-height:6px;
+}
+.moblie_baidu p:last-child{
+    color: #999;
+    font-size: 12px;
+    line-height: 0px;
+}
+
+.experience{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 67px;
+    position: absolute;
+    bottom: 10px;
+    right: 11px;
+    box-sizing: border-box;
+    z-index: 99;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+}
