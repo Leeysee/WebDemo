@@ -1,0 +1,53 @@
+安装fis3
+npm install -g fis3
+在fis3官网上 http://fis.baidu.com/fis3/docs/beginning/release.html
+用户文档-起步-构建
+
+
+例子
+在正式介绍 FIS3 功能之前，我们给定一个简单的例子，例子下载地址 demo-simple
+进入demo-simple->https://github.com/fex-team/fis3/blob/dev/doc/demo/demo-simple.tar.gz
+fis3/doc/demo/demo-simple.tar.gz  进入doc后的demo
+进入demo-simple找都fis-conf.is进入copy
+// fis.match('::packager', {
+//   spriter: fis.plugin('csssprites')
+// });
+
+// fis.match('*', {
+//   useHash: false
+// });
+
+// fis.match('*.js', {
+//   optimizer: fis.plugin('uglify-js')
+// });
+
+// fis.match('*.css', {
+//   useSprite: true,
+//   optimizer: fis.plugin('clean-css')
+// });
+
+// fis.match('*.png', {
+//   optimizer: fis.plugin('png-compressor')
+// });
+
+
+在fis3_baidu项目里新建fis-conf.js 复制上面的代码
+如果要拼接雪碧图，html里的<img scr="">要修改成<div class="xxx">
+再到CSS里去添加.xxx{
+	 background: url('img/allsp.png?__sprite'); //这条属性才可以，主要注意后缀？__sprite
+}
+
+发布方法:另外建立一个文件夹叫dist或者其他在fis3_baidu下 然后fis3 release -d  dist//或者fis3 release -d  D:\output
+进入dist   cd dist
+然后fis3 server start
+这样就自动全部压缩好了但是HTML没有被压缩
+现在我们做html压缩
+在https://github.com/fex-team/fis3-demo 找到html-compress html 压缩打开fis-conf.js阅读
+需要安装npm i fis-optimizer-html-minifier -g
+在fis3_baidu里fis-conf.js里添加下面代码开启html压缩
+fis.match('*.html', {
+  //invoke fis-optimizer-html-minifier
+  optimizer: fis.plugin('html-minifier')
+});
+重新发布一下fis3 release -d  ./output
+监视文件：fis3 release -wL

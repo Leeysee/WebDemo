@@ -1,0 +1,167 @@
+ * {
+     font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, SimHei;
+     padding: 0px;
+ }
+ /* 标准盒模型 */
+ 
+ .xiezi {
+     width: 100px;
+     height: 100px;
+     background-color: orange;
+     overflow: auto;
+ }
+ 
+ .xiehe {
+     margin: 100px;
+     padding: 10px;
+     width: 100px;
+     height: 100px;
+     background-color: aqua;
+     border: 5px solid red;
+ }
+ /* 怪异盒模型 */
+ 
+ .xiezi1 {
+     width: 100px;
+     height: 100px;
+     background-color: orange;
+ }
+ 
+ .xiehe1 {
+     margin: 100px;
+     padding: 10px;
+     width: 130px;
+     height: 130px;
+     background-color: aqua;
+     border: 5px solid red;
+     box-sizing: border-box;
+ }
+ /* cloumn分栏 */
+ 
+ .colbg {
+     box-shadow: 0px 0px 10px 3px #94b8ea;
+     background-image: url(../image/timg.jpg);
+     background-repeat: no-repeat;
+     background-size: 100%;
+     background-attachment: scroll;
+ }
+ 
+ .col {
+     font-size: 12px;
+     padding: 40px;
+     text-align: center;
+     border: 4px solid #94b8ea;
+     -moz-columns: 200px 3;
+     -webkit-columns: 200px 3;
+     columns: 200px 3;
+     -moz-column-count: 3;
+     -moz-column-gap: 40px;
+     -webkit-column-count: 3;
+     -webkit-column-gap: 40px;
+     column-count: 3;
+     column-gap: 40px;
+ }
+ /* 旧版弹性盒子居中布局 */
+ 
+ .image {
+     filter: url(blur.svg#blur);
+     /* FireFox, Chrome, Opera */
+     -webkit-filter: blur(0px);
+     /* Chrome, Opera */
+     -moz-filter: blur(0px);
+     -ms-filter: blur(0px);
+     filter: blur(0px);
+     filter: progid: DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false);
+     /* IE6~IE9 */
+     /*图片模糊*/
+ }
+ 
+ .center {
+     box-shadow: 0px 0px 10px 3px orange;
+     display: -webkit-box;
+     -webkit-box-pack: center;
+     -webkit-box-align: center;
+     height: 300px;
+     width: 300px;
+     background-color: orange;
+ }
+ /* 排序(flex)水平分栏 */
+ 
+ .content {
+     -webkit-box-orient-flex;
+     display: -webkit-flex;
+     width: 600px;
+     background-color: green;
+ }
+ 
+ .first {
+     -webkit-order: 3;
+     height: 100px;
+     -webkit-flex: 1;
+     background-color: orange;
+ }
+ 
+ .second {
+     -webkit-order: 2;
+     -webkit-flex: 1;
+     height: 100px;
+     background-color: aquamarine;
+ }
+ 
+ .third {
+     -webkit-order: 1;
+     -webkit-flex: 1;
+     height: 200px;
+     background-color: #E3FF7F;
+ }
+ /* 垂直分栏flex */
+ 
+ .content2 {
+     display: -webkit-flex;
+     -webkit-flex-direction: column;
+     width: 600px;
+     height: 500px;
+     background-color: green;
+ }
+ 
+ .first2 {
+     height: 100px;
+     -webkit-flex: 1;
+     background-color: orange;
+ }
+ 
+ .second2 {
+     -webkit-flex: 1;
+     height: 100px;
+     background-color: aquamarine;
+ }
+ 
+ .third2 {
+     -webkit-flex: 1;
+     height: 200px;
+     background-color: #E3FF7F;
+ }
+ /* 垂直分栏老版box */
+ 
+ .content3 {
+     display: -webkit-box;
+     -webkit-box-orient: vertical;
+     width: 600px;
+     height: 500px;
+     background-color: green;
+ }
+ 
+ .first3 {
+     -webkit-box-flex: 1;
+     background-color: orange;
+ }
+ 
+ .second3 {
+     -webkit-box-flex: 1;
+     background-color: aquamarine;
+ }
+ 
+ .third3 {
+     -webkit-box-flex: 1;
+     background-color: #E3FF7F;
+ }

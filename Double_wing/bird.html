@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>div+css布局</title>
+    <style type="text/css">
+    * {
+        font-family: 微软雅黑;
+        margin: 0;
+        padding: 0px;
+     
+    }
+    
+   body .atricle{
+        line-height: 30px;
+    }
+    
+    .header {
+       line-height: 50px;
+        height: 60px;
+        background-color: #e1e1e1;
+    }
+    
+    .atricle {
+        margin-top: 10px;
+        background-color: #ffffff;
+        height: auto;
+        overflow: hidden;
+        /*      padding-left: 150px;
+   padding-right: 100px; */
+    }
+    
+    .footer {
+        background-color: #e1e1e1;
+        height: 30px;
+    }
+    
+    .atricle .left {
+        padding: 20px;
+        width: 160px;
+        background-color: #e1e1e1;
+        float: left;
+        margin-left: -100%;
+        margin-bottom: -9999px;
+        padding-bottom: 9999px;
+        opacity: 1;
+        /*      position: relative;
+   left: -150px; */
+    }
+    
+    .atricle .right {
+        padding: 20px;
+        width: 160px;
+        background-color: #e1e1e1;
+        float: left;
+        margin-left: -200px;
+        margin-bottom: -9999px;
+        padding-bottom: 9999px;
+        opacity: 1;
+        /* height: 16px; */
+        /*         position: relative;
+right: -100px; */
+    }
+    
+    .atricle .middle {
+        padding: 30px;
+        margin-right: 210px;
+        margin-left: 210px;
+        float: left;
+        background-color: #e1e1e1;
+        margin-bottom: -9999px;
+        padding-bottom: 9999px;
+        opacity: 1;
+    }
+    
+    .inner {}
+    
+    .footer {
+        margin-top: 10px;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>极客星球周刊</h1>
+    </div>
+    <div class="atricle">
+        <div class="middle">
+            <div class="inner">
+                <h3>前言</h3>
+                <h4>《极客星球》创刊致辞</h4>
+                <h5>----极客学院创始人 & CTO 姚尚朗(IceskYsl)</h5>
+                <p>2015 年 7 月 30 日，《极客星球》期刊创刊。伴随着首刊的发布，一本专为国内互联网开发人员提供全球最新互联网 IT 技术译文的期刊诞生了。</p>
+                <h5>《极客星球》名称的含义：</h5>
+                <p>极客，《极客星球》期刊是极客学院旗下的 IT 技术类期刊，我们相信，我们的读者都是具有极客精神的优秀开发人员。 星球，我们都生活在这个神奇的星球上，我们相信，通过我们的努力，能够使每一位读者在极客的星球上变得更加与众不同。
+                </p>
+                <p>极客星球》期刊要解决的是目前国内开发者的两个痛点： IT 类文章的时效性 众所周知，IT 行业的特点是更新速度快，尤其是当下最热门的互联网技术，技术发展更是日新月异。只有最新、最快的技术文章才能够适应互联网的节奏，为读者创造价值。 IT 类文章的全球性 计算机及互联网技术自诞生以来，以美国为主的西方国家始终引领着计算机技术的发展，国内的文章已经不能完全满足我们技术人员的需求，需要引进国外先进的技术类文章来使我们的技术更加接近甚至超越全球 IT 技术最高水平。 针对这两个痛点，《极客星球》给出了自己的解决方案： 我们选取的所有文章，发表时间均在当期期刊发布日一个月以内 我们只精选国外互联网热门领域的文章并通过我们专业的翻译团队呈现给大家 《极客星球》期刊内容涵盖的互联网技术领域包括： 移动应用开发、Web 开发、后端开发、大数据及商务智能、游戏开发、智能硬件、云计算与安全、产品与设计、全球技术头条以及职业规划与加薪。 我们希望，从这个起点出发，《极客星球》期刊能走的更远，站在全球 IT 技术前沿的视角，引进更多全球最新 IT 技术知识，与极客学院平台一起服务更多 IT 从业人员，让学习变得更加有效！ PS:《极客星球》与 极客学院 Wiki 的故事： 《极客星球》的诞生离不开极客学院，也离不开极客学院 Wiki，没有 Wiki 的基础，就没有《极客星球》的诞生。 我们从 2015 年 3 月份上线极客学院 Wiki，仅四个月的时间，已经有超过 200 门 IT 图文教程上线。《极客星球》此时的推出，是希望在极客学院 Wiki 系统化学习的基础上，补充时效性更强的 IT 技术类文章， 打造立体式的学习体验。 如果读者在读到某些知识点，希望更深入、更系统的了解与学习，请移步极客学院 Wiki (wiki.jikexueyuan.com), 那里有更多你想要的 IT 技术干货！ 2015 年 7 月 30 日 关于极客学院 极客学院是中国最大的 IT 职业在线教育平台。极客学院的理念是通过最新实战课程,帮助职业开发者系统学习 Android、Cocos2d-x、iOS、HTML5、Java 等⾼薪所需的职业开发技能。⽬前,超过 45 万专业技术开发者通过极客学院学得了更有竞争力的最新 IT 技能。 2014 年,中国几乎所有的热门技术及应⽤用课程,都由极客学院首发。包括:中国第一个 「Flappy Bird」课程、中国第一个「2048」的课程、中国第一个「围住神经猫」等诸多中国乃至全球首发课程。在六月份,WWDC 苹果发布全新的 Swift 开发语言时,极客学院更是 7 个小时就上线了 Swift 的开发课程。 极客学院官网：www.jikexueyuan.com 关于极客学院 Wiki 极客学院 Wiki 是集高质量内容、技术分享、作品出版及技术交流为一体的 IT 在线学习与共享的图文平台。采用先进的课程制作工具，以图文教程的方式，将成体系的IT课程带给用户。历经 4 个月的积累，Wiki已经形成了超过 200 门课程，40 多种品类，课程数还在快速攀升，并覆盖了最新、最前沿的技术。所有内容全部免费，并可离线下载，方便IT从业者随时随地进行学习。科学的课程设置体系，也让知识点更加通俗易学。 Wiki 拥有一支专门的运营团队，成员均拥有多年技术社区运营经验，自身也从事技术开发工作，非常了解用户的需求。团队除了翻译国外前沿技术，收集国内开源技术知识，也在签约外部顶尖技术作者，进行内容体系的完善。后续，还将会增加更多创新功能，包括：课程专题、课程推荐、课程搜索、API 在线文档查询以及用户自主贡献内容(UGC)等。 极客学院 Wiki 网址: wiki.jikexueyuan.com 联系我们 欢迎广大读者为我们期刊提供宝贵的意见和建议。 极客学院 Wiki 官方 QQ 群: 323037186 邮箱联系: wiki@jikexueyuan.com 加入我们: http://wiki.jikexueyuan.com/project/wiki-editors-guidelines/</p>
+            </div>
+        </div>
+        <div class="left">本周科技圈内讨论最多的要数诺兰的新电影《星际穿越》了吧，结合虫洞、黑洞、五维空间等理论，诺兰这次的脑洞开得也足够大。不过也有物理学家指出了电影中出现的事实硬伤，还有其他的种种吐槽。 从早期的《记忆碎片》到《蝙蝠侠》再到《盗梦空间》，诺兰对于电影的构思于剪辑都有自己独特的想法。这次的《星际穿越》，他更是没有随大流地选择 3D 和数字电影，而是在宣传上大大地印上了 2D,诺兰曾在 The Hollywood Reporter's 的采访中表示。「胶片是捕捉以及放映图像的最佳方式。就是这么回事，没什么好说的。
+        </div>
+        <div class="right">本周科技圈内讨论最多的要数诺兰的新电影《星际穿越》了吧，结合虫洞、黑洞、五维空间等理论，诺兰这次的脑洞开得也足够大。不过也有物理学家指出了电影中出现的事实硬伤，还有其他的种种吐槽。 从早期的《记忆碎片》到《蝙蝠侠》再到《盗梦空间》，诺兰对于电影的构思于剪辑都有自己独特的想法。这次的《星际穿越》，他更是没有随大流地选择 3D 和数字电影，而是在宣传上大大地印上了 2D,诺兰曾在 The Hollywood Reporter's 的采访中表示。「胶片是捕捉以及放映图像的最佳方式。就是这么回事，没什么好说的。
+        </div>
+    </div>
+    <div class="footer">
+        版权所有@
+    </div>
+</body>
+
+</html>

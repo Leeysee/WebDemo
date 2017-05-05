@@ -1,0 +1,77 @@
+body {
+    font-family: Verdana, 'Lantinghei SC', 'Hiragino Sans GB', 'Microsoft Yahei', Helvetica, arial, 宋体, sans-serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color:#4e545d;
+}
+
+.container{
+
+}
+.jk_login{
+position: absolute;
+width: 330px;
+height: 235px;
+top: 50%;
+left: 50%;
+margin-left: -165px;
+margin-top: -118px;
+
+}
+
+.form-signin {
+
+    max-width: 330px;
+  
+ 
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.logobg {
+  position: absolute;
+  display: inline-block;
+  width: 475px;
+  height: 549px;
+  top: 50%;
+  left: 50%;
+  margin-left: -248px;
+  margin-top: -325px;
+    background: url(../images/login-form.png) 0 0 no-repeat ;
+    background-size: 475px 549px;
+    z-index: -1;
+}
+

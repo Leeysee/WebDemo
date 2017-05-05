@@ -1,0 +1,972 @@
+html,
+body,
+.warpper,
+.header,
+.main,
+.footer,
+.jk_class ul,
+.Vocational_College_container ul,
+.vip_course ul,
+.vip_course ul li a p span,
+.vip_course ul li a p,
+.vip_course ul li,
+.vip_course ul li a,
+.Student_stroy ul,
+.Student_stroy ul li,
+.Student_stroy ul li p,
+.Student_stroy ul li span,
+.cooperation ul,
+.cooperation ul li,
+.cooperation ul li a,
+.more_link ul,
+.more_link ul li {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, 'Lantinghei SC', 'Hiragino Sans GB', 'Microsoft Yahei', Helvetica, arial, 宋体, sans-serif;
+}
+
+* {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+h2 {
+    font-size: 18px;
+    color: #555;
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 22px;
+    font-weight: 400;
+}
+
+
+/*头部*/
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ececec;
+}
+
+.header_center {
+    width: 1000px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+.jk_logo {
+    display: block;
+    float: left;
+    width: 109px;
+    height: 40px;
+    margin-top: 10px;
+    border: 0 none;
+}
+
+.header_nav {
+    line-height: 30px;
+    margin-left: 20px;
+    display: inline-block;
+    width: 450px;
+    height: 60px;
+}
+
+.header_nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+.header_nav li {
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 50px;
+    cursor: pointer;
+    height: 60px;
+    float: left;
+}
+
+.login_area {
+    float: right;
+    text-align: right;
+    width: 200px;
+    height: 60px;
+    margin-right: 10px;
+    margin-top: 22px;
+}
+
+.login_area span {
+    margin-left: 25px;
+}
+
+.serach {
+    display: inline-block;
+    width: 17px;
+    height: 60px;
+    background: url(../images/search-icon.png) 0 0 no-repeat;
+    background-size: 17px 17px;
+}
+
+.app {
+    display: inline-block;
+    width: 17px;
+    height: 60px;
+    background: url(../images/app-icon.png) 0 0 no-repeat;
+    background-size: 17px 17px;
+}
+
+.vip {
+    display: inline-block;
+    width: 25px;
+    height: 60px;
+    background: url(../images/default.gif) 0 0 no-repeat;
+    background-size: 25px 25px;
+}
+
+
+/*头部 end*/
+
+
+/*中间*/
+
+.main {
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 2220px;
+    background-color: #f5f5f5;
+}
+
+.main_warpper {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.jk_banner {
+    float: left;
+    width: 750px;
+    height: 330px;
+}
+
+.jk_banner_container {
+    width: 750px;
+    height: 330px;
+    background-color: blue;
+}
+
+.left_arrow {
+    width: 50px;
+    height: 80px;
+    background: url(../images/arrow.png) no-repeat center;
+    float: left;
+    position: relative;
+    top: 50%;
+    left: 0;
+    margin-top: -40px;
+    z-index: 2;
+    cursor: pointer
+}
+
+.right_arrow {
+    width: 50px;
+    height: 80px;
+    background: url(../images/arrow.png) no-repeat center;
+    float: right;
+    position: relative;
+    top: 50%;
+    right: 0;
+    margin-top: -40px;
+    z-index: 2;
+    cursor: pointer;
+    -webkit-transform: rotate(180deg)
+}
+
+
+/*banner*/
+
+.banner {
+    height: 330px;
+    background-image: url(../images/banner1.jpg);
+}
+
+.jk_menber {
+    margin: 0 0 0 10px;
+    float: left;
+    width: 240px;
+    height: 160px;
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+
+/*就业班*/
+
+.jk_activity {
+    margin: 10px 0 0 10px;
+    display: inline-block;
+    width: 240px;
+    height: 160px;
+    background: url(../images/activity.jpg) 0 0 no-repeat;
+}
+
+.Employment_class {
+    margin: 0 auto;
+    width: 1000px;
+    height: 170px;
+}
+
+.Empliyment_class_warpper {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Employment_class a {
+    margin: 5px 0 5px 0;
+    border: 1px solid #35b558;
+    width: 327px;
+    height: 72px;
+    display: inline-block;
+    background-color: #ffffff;
+}
+
+.Employment_bg1 {
+    border: 0;
+    height: 72px;
+    background-size: 328px 73px;
+    background: url(../images/1.jpg) no-repeat center center;
+}
+
+.Employment_bg2 {
+    border: 0;
+    height: 72px;
+    background-size: 328px 73px;
+    background: url(../images/2.jpg) no-repeat center center;
+}
+
+.Employment_bg3 {
+    border: 0;
+    height: 72px;
+    background-size: 328px 73px;
+    background: url(../images/3.jpg) no-repeat center center;
+}
+
+.Employment_bg4 {
+    border: 0;
+    height: 72px;
+    background-size: 328px 73px;
+    background: url(../images/4.jpg) no-repeat center center;
+}
+
+.Employment_bg5 {
+    border: 0;
+    height: 72px;
+    background-size: 328px 73px;
+    background: url(../images/5.jpg) no-repeat center center;
+}
+
+.Employment_bg6 {
+    border: 0;
+    height: 72px;
+    background-size: 328px 73px;
+    background: url(../images/6.jpg) no-repeat center center;
+}
+
+.Employment_class img {
+    padding-top: 6px;
+    padding-left: 12px;
+    float: left;
+}
+
+.Employment_class p {
+    font-size: 16px;
+    color: #ffffff;
+    padding-left: 48px;
+    line-height: 36px;
+    float: left;
+}
+
+
+/*课程*/
+
+.jk_class {
+    width: 1000px;
+    height: 270px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.jk_class ul {
+    width: 100%;
+    height: 100%;
+}
+
+.jk_class ul li {
+    font-size: 0;
+    float: left;
+    width: 233px;
+    margin-right: 20px;
+    border: 1px solid #e9e9e9;
+    list-style: none;
+}
+
+.jk_class ul li:last-child {
+    margin-right: 0;
+}
+
+.jk_class ul li img {
+    vertical-align: middle;
+    width: 100%;
+    height: 155px;
+}
+
+.jk_class ul li div p {}
+
+.jk_class ul li .jk_class_Container {
+    padding: 14px;
+    height: 87px;
+    position: relative;
+    background: #fff;
+}
+
+.jk_class ul li .jk_class_item {
+    width: 100%;
+    font-size: 12px;
+    color: #555;
+    line-height: 0px;
+    height: 14px;
+}
+
+.jk_class ul li .jk_class_hours {
+    margin-top: 6px;
+    color: #999;
+    font-size: 12px;
+    line-height: 32px;
+    height: 0px;
+}
+
+.jk_class ul li .jk_class_Price {
+    float: left;
+    font-size: 18px;
+    color: #ff5c00;
+    vertical-align: bottom;
+    margin-right: 5px;
+    margin-top: 18px;
+}
+
+.jk_class ul li .jk_class_discount {
+    float: left;
+    font-size: 12px;
+    color: #999;
+    margin-top: 22px;
+    text-decoration: line-through;
+    vertical-align: bottom;
+}
+
+.jk_class ul li .jk_class_studymenber {
+    display: inline-block;
+    height: 14px;
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    color: #999;
+    font-size: 12px;
+}
+
+
+/*职业学院*/
+
+.Vocational_College_container ul li {
+    margin-left: 10px;
+    float: left;
+}
+
+.Vocational_College_container ul li a {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    z height: 100%;
+}
+
+.Vocational_College img {
+    display: inline-block;
+}
+
+.Vocational_College span {
+    color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.Vocational_College_container {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    height: 310px;
+    margin-bottom: 40px;
+}
+
+.language_Web {
+    width: 500px;
+    height: 270px;
+    background-size: 55px 84px;
+}
+
+.language_Web img {
+    display: inline-block;
+    width: 500px;
+    height: 270px;
+}
+
+.language_python {
+    width: 240px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.language_python img {
+    display: inline-block;
+    width: 240px;
+    height: 130px;
+}
+
+.language_go {
+    width: 240px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.language_go img {
+    display: inline-block;
+    width: 240px;
+    height: 130px;
+}
+
+.language_ios {
+    width: 240px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.language_ios img {
+    display: inline-block;
+    width: 240px;
+    height: 130px;
+}
+
+.language_more {
+    width: 240px;
+    height: 130px;
+    float: left;
+    margin-left: 0;
+}
+
+.language_more img {
+    display: inline-block;
+    width: 240px;
+    height: 130px;
+}
+
+.language_Web a i {
+    width: 55px;
+    height: 84px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -27px;
+    margin-top: -62px;
+    background-image: url(../images/web.png);
+    background-size: 55px 84px;
+}
+
+.language_Web span {
+    padding-top: 180px;
+    font-size: 20px;
+}
+
+.language_python a i {
+    width: 36px;
+    height: 36px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -18px;
+    margin-top: -32px;
+    background-image: url(../images/python.png);
+    background-size: 36px 36px;
+}
+
+.language_python span {
+    font-size: 14px;
+    padding-top: 88px;
+}
+
+.language_go a i {
+    width: 36px;
+    height: 36px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -18px;
+    margin-top: -32px;
+    background-image: url(../images/go.png);
+    background-size: 36px 36px;
+}
+
+.language_go span {
+    font-size: 14px;
+    padding-top: 88px;
+}
+
+.language_ios a i {
+    width: 36px;
+    height: 36px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -18px;
+    margin-top: -32px;
+    background-image: url(../images/ios.png);
+    background-size: 36px 36px;
+}
+
+.language_ios span {
+    font-size: 14px;
+    padding-top: 88px;
+}
+
+.language_more a i {
+    width: 36px;
+    height: 36px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -18px;
+    margin-top: -32px;
+    background-image: url(../images/more.png);
+    background-size: 36px 36px;
+}
+
+.language_more span {
+    font-size: 14px;
+    padding-top: 88px;
+}
+
+
+/*职业学院end*/
+
+
+/*会员课程*/
+
+.vip_course {
+    width: 1000px;
+    margin: 0 auto;
+    height: 356px;
+    margin-bottom: 40px;
+}
+
+.vip_course ul {
+    width: 100%;
+    height: 310px;
+}
+
+.vip_course ul li {
+    float: left;
+    width: 156px;
+    height: 150px;
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    margin-right: 10px;
+}
+
+.vip_course ul li a span {
+    display: block;
+    font-size: 12px;
+    color: #35b558;
+    height: 22px;
+    line-height: 22px;
+}
+
+.vip_course ul li a p {
+    font-size: 12px;
+    color: #555;
+    height: 22px;
+    line-height: 12px;
+}
+
+.vip_course ul li a img {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin-top: 25px;
+}
+
+.vip_course ul li a {
+    display: block;
+    height: 100%;
+    text-align: center;
+}
+
+.vip_course ul li:nth-child(n+7) {
+    margin-top: 10px;
+}
+
+.vip_course ul li:nth-child(6) {
+    margin-right: 0;
+}
+
+.vip_course ul li:last-child {
+    margin-right: 0;
+}
+
+.all_course {
+    display: inline-block;
+    height: 32px;
+    line-height: 30px;
+    border: 1px solid #35b558;
+    border-radius: 2px;
+    width: 120px;
+    font-size: 14px;
+    color: #35b558;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    margin-left: -60px;
+    -webkit-transition: background .8s;
+}
+
+.all_course:hover {
+    background-color: #35b558;
+    color: #ffffff;
+}
+
+
+/*会员课程end*/
+
+
+/*学员故事*/
+
+.Student_story {
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.stroy_container {
+    width: 1000px;
+    height: 260px;
+}
+
+.Student_story ul {
+    width: 1000px;
+    height: 200px;
+}
+
+.Student_story ul li {
+    float: left;
+    width: 320px;
+    height: 200px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.Student_story ul li:last-child {
+    margin-right: 0;
+}
+
+.student_photo {
+    height: 80px;
+    position: relative;
+}
+
+.story_content {
+    width: 100%;
+    height: 118px;
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    position: relative;
+}
+
+.story_content p {
+    height: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    color: #555;
+    line-height: 20px;
+    padding: 12px 28px !important;
+    text-align: left;
+}
+
+.story_content i {
+    position: absolute;
+    display: block;
+    width: 14px;
+    height: 10px;
+    top: 10px;
+    left: 10px;
+    background-image: url(../images/yh.png);
+    background-size: 14px 10px;
+}
+
+.story_content .i1 {
+    position: absolute;
+    display: block;
+    width: 14px;
+    height: 10px;
+    top: 100px;
+    left: 296px;
+    background-image: url(../images/yh.png);
+    background-size: 14px 10px;
+    -webkit-transform: rotate(180deg);
+}
+
+.Student_story img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #e9e9e9;
+}
+
+.student_photo {
+    height: 80px;
+    position: relative;
+}
+
+.student_photo p {
+    position: absolute;
+    top: 20px;
+    left: 94px;
+    font-size: 12px;
+    color: #555;
+}
+
+.Student_story span {
+    top: 57px;
+    left: 92px;
+    position: absolute;
+    color: #999;
+    font-size: 12px;
+}
+
+
+/*学员故事end*/
+
+
+/*合作企业*/
+
+.cooperation {
+    width: 1000px;
+    margin: 0 auto;
+    height: 240px;
+    margin-bottom: 40px;
+}
+
+.cooperation ul li {
+    float: left;
+    width: 148px;
+    height: 50px;
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    margin-right: 20px;
+}
+
+.cooperation ul li:nth-child(6),
+.cooperation ul li:last-child {
+    margin-right: 0;
+}
+
+.cooperation ul li:nth-child(n+7) {
+    margin-top: 20px;
+}
+
+.more_partner {
+    display: inline-block;
+    margin-top: 38px;
+    height: 32px;
+    line-height: 30px;
+    border: 1px solid #35b558;
+    border-radius: 2px;
+    width: 120px;
+    font-size: 14px;
+    color: #35b558;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    margin-left: -60px;
+    -webkit-transition: background .8s;
+}
+
+.more_partner:hover {
+    background-color: #35b558;
+    color: #ffffff;
+}
+
+.cooperation ul li a {
+    display: block;
+    height: 100%;
+}
+
+.cooperation ul li:nth-child(1) a {
+    background: url(../images/C1.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(2) a {
+    background: url(../images/C2.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(3) a {
+    background: url(../images/C3.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(4) a {
+    background: url(../images/C4.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(5) a {
+    background: url(../images/C5.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(6) a {
+    background: url(../images/C6.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(7) a {
+    background: url(../images/C7.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(8) a {
+    background: url(../images/C8.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(9) a {
+    background: url(../images/C9.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(10) a {
+    background: url(../images/C10.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(11) a {
+    background: url(../images/C11.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(12) a {
+    background: url(../images/C12.png) no-repeat center;
+}
+
+
+/*合作企业end*/
+
+
+/*中间 end*/
+
+
+/*底部*/
+
+.footer {
+    position: relative;
+    min-width: 1000px;
+    border-top: 1px solid #e4e4e4;
+}
+
+.jk_logo2 {
+    position: absolute;
+    
+    left: -220px;
+}
+
+.jk_logo2 p {
+    width: 160px;
+    text-align: left;
+     line-height: 0;
+    font-size: 12px;
+    color: #999;
+}
+
+.jk_logo2 img {
+    width: 109px;
+    height: 40px;
+}
+
+.more_link {
+    position: relative;
+    width: 100%;
+}
+
+.more_link ul {
+    position: relative;
+    left: 50%;
+    margin-left: -225px;
+    margin-top: 20px;
+    width: 650px;
+    height: 180px;
+    background-color: #ffffff;
+}
+
+.more_link ul li {
+    float: left;
+    width: 135px;
+    height: 30px;
+    border: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+    line-height: 30px;
+}
+
+.more_link ul li a {
+    font-size: 12px;
+    color: #999999;
+}
+
+.more_link ul li a:hover {
+    font-size: 12px;
+    color: #35b558;
+}
+
+.more_link ul li:nth-child(n+26) {
+    margin-top: 120px;
+}
+
+.more_link ul li span {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer .copyright {
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.more_link ul li:nth-child(1){
+	  text-align: left;
+}
+
+/*底部end*/

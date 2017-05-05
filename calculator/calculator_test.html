@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>计算器</title>
+</head>
+<link rel="stylesheet" type="text/css" href="stylesheets/calculator.css">
+
+<body>
+    <div id="calculator">
+        <div class="LOGO"> <span class="name">简单的计算器</span>
+            <div id="shuRu">
+                <!--screen输入栏-->
+                <div class="inputWindow">
+                    <input type="text" id="inputWindow" class="inputWindow" value=""> </div>
+            </div>
+            <div id="keys">
+                <!-- operators and other keys -->
+                <!--第一排-->
+                <input type="button" id="7" onclick="cal(this.id)" value="7" class="buttons">
+                <input type="button" id="8" onclick="cal(this.id)" value="8" class="buttons">
+                <input type="button" id="9" onclick="cal(this.id)" value="9" class="buttons">
+                <input type="button" id="Back" onclick="back()" value="Back" class="buttons">
+                <input type="button" id="C" onclick="clearNum()" value="C" class="buttons" style="margin-right:0px">
+                <!--第二排-->
+                <input type="button" id="4" onclick="cal(this.id)" value="4" class="buttons">
+                <input type="button" id="5" onclick="cal(this.id)" value="5" class="buttons">
+                <input type="button" id="6" onclick="cal(this.id)" value="6" class="buttons">
+                <input type="button" id="*" onclick="cal(this.id)" value="*" class="buttons">
+                <input type="button" id="/" onclick="cal(this.id)" value="/" class="buttons" style="margin-right:0px">
+                <!--第三排-->
+                <input type="button" id="1" onclick="cal(this.id)" value="1" class="buttons">
+                <input type="button" id="2" onclick="cal(this.id)" value="2" class="buttons">
+                <input type="button" id="3" onclick="cal(this.id)" value="3" class="buttons">
+                <input type="button" id="+" onclick="cal(this.id)" value="+" class="buttons">
+                <input type="button" id="-" onclick="cal(this.id)" value="-" class="buttons" style="margin-right:0px">
+                <!--第四排-->
+                <input type="button" id="0" onclick="cal(this.id)" value="0" class="buttons">
+                <input type="button" id="00" onclick="cal(this.id)" value="00" class="buttons">
+                <input type="button" id="." onclick="cal(this.id)" value="." class="buttons">
+                <input type="button" id="%" onclick="cal(this.id)" value="%" class="buttons">
+                <input type="button" id="eva" onclick="eva()" value="=" class="buttons" style="margin-right:0px">
+                <!--第五排-->
+                <input type="button" id="sin" onclick="sin()" value="sin" class="buttons">
+                <input type="button" id="cos" onclick="cos()" value="cos" class="buttons">
+                <input type="button" id="(" onclick="cal(this.id)" value="(" class="buttons">
+                <input type="button" id=")" onclick="cal(this.id)" value=")" class="buttons">
+                <input type="button" id="eva" onclick="eva()" value="=" class="buttons" style="margin-right:0px"> </div>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+    var num = 0;
+
+    window.console = window.console || (function() { //解决IE8console.log未定义
+        var c = {};
+        c.log = c.warn = c.debug = c.info = c.error = c.time = c.dir = c.profile = c.clear = c.exception = c.trace = c.assert = function() {};
+        return c;
+    })();
+
+    function cal(num) {
+
+        document.getElementById('inputWindow').value += document.getElementById(num).value;
+    }
+
+
+
+
+    /*  sin的计算方法Math.sin(30*Math.PI/180);*/
+    /*  cos的计算方法Math.cos(30*Math.PI/180);*/
+
+    function sin(a) { //计算sin
+        //获取输入的值
+        if (a == null) {
+
+            num = document.getElementById("inputWindow").value;
+            console.info(num); //可加可不加，打出num的值IE8下不兼容
+            a = num;
+        }
+        var sumSin = Math.sin(a * Math.PI / 180);
+        document.getElementById("inputWindow").value = parseFloat(sumSin.toFixed(9));
+    }
+
+
+    function cos(b) { //计算cos
+        if (b == null) {
+
+            console.info(num);
+            b = num; //可加可不加，打出num的值IE8下不兼容
+        }
+        var sumCos = Math.cos(b * Math.PI / 180);
+        document.getElementById("inputWindow").value = parseFloat(sumCos.toFixed(9));
+    }
+
+
+    function eva() {
+        if (eval(document.getElementById("inputWindow").value) === Infinity || eval(document.getElementById("inputWindow").value) === -Infinity) {
+            alert('除数不能为0');
+            document.getElementById('inputWindow').value = 'NaN'; //除数为0警告结果为NaN
+        } else {
+            document.getElementById("inputWindow").value = parseFloat(eval(document.getElementById("inputWindow").value).toFixed(9)); //清除浮点
+        }
+
+    }
+
+
+    function clearNum() { //清0
+
+        document.getElementById("inputWindow").value = "";
+
+    }
+    
+
+    function back() { //回退
+
+        var arr = document.getElementById("inputWindow");
+        arr.value = arr.value.substring(0, arr.value.length - 1);
+    }
+    </script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+/*Basic reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 14px Arial, sans-serif;
+}
+
+html {
+    height: 100%;
+  
+}
+
+#calculator {
+	position: absolute;
+	left: 50%;
+    top: 50%;
+    margin-left: -165px;
+    margin-top: -200px;
+    width: 330px;
+    height: 440px;
+    border: 4px solid #717171;
+    border-radius: 6%;
+    background-color: #EAEAEA;
+    padding: 10px;
+}
+
+
+/*LOGO*/
+
+.LOGO {
+    height: 20px;
+
+}
+
+.LOGO .name {
+    float: left;
+    line-height: 40px;
+    margin-left: 16px;
+}
+
+
+
+/*screen*/
+
+#shuRu {
+    margin-top: 15px;
+    height: 70px;
+}
+
+.inputWindow {
+
+ 
+    margin:0 auto;
+    width: 280px;
+    height: 40px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 20px;
+}
+.inputWindow input{
+	color: #ffffff;
+		background-color: #48555b;
+		border: 2px solid #101010;
+		border-top-left-radius: 5% 30%;
+		border-bottom-right-radius: 5% 30%;
+		border-top-right-radius: 5% 30%;
+		border-bottom-left-radius: 5% 30%;
+}
+
+#keys {
+
+   
+    height: 223px;
+    margin-top: 25px;
+    padding: 11px;
+}
+
+
+
+.footer {
+    margin-top: 20px;
+    height: 20px;
+}
+
+
+#keys .buttons {
+    float: left;
+    width: 42px;
+    height: 36px;
+    text-align: center;
+    background-color: #666561;
+    border: 2px solid #2c2c2a;
+    border-radius: 15%;
+    color: #ffffff;
+    font-weight: bold;
+
+    margin: 0 17px 20px 0;
+}
+
+
+#C{
+	background-color: #e8501e !important; 
+}
+
+
+
+
+

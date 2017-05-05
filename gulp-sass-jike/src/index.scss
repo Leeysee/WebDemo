@@ -1,0 +1,929 @@
+//极客学院首页SASS
+$indexfont: Verdana, 'Lantinghei SC', 'Hiragino Sans GB', 'Microsoft Yahei', Helvetica, arial, 宋体, sans-serif;
+$p0:0; //padding 0
+$m0:0; //margin 0
+$jikecolor:#35b558;//极客学院主题色
+$primaryColor: #333;//普通颜色
+$bg:#ffffff;
+@mixin display ($ib) {//传入inline-block或者block
+    display: $ib;
+}
+
+
+@mixin wh ($width,$height) {//传入 数字px   或者0%-100%
+    width: $width;
+    height: $height;
+}
+
+
+
+//全局
+* {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+html,
+body,
+.warpper,
+.header,
+.main,
+.footer,
+.jk_class ul,
+.Vocational_College_container ul,
+.vip_course ul,
+.vip_course ul li a p span,
+.vip_course ul li a p,
+.vip_course ul li,
+.vip_course ul li a,
+.Student_stroy ul,
+.Student_stroy ul li,
+.Student_stroy ul li p,
+.Student_stroy ul li span,
+.cooperation ul,
+.cooperation ul li,
+.cooperation ul li a,
+.more_link ul,
+.more_link ul li {
+  font-family: $indexfont;
+  padding: $p0;
+  margin: $m0;
+}
+
+//头部
+.header {//父级
+	@include wh(100%,60px);
+    background-color: $bg;
+    border-bottom: 1px solid #ececec;
+    .header_center {//子级1
+	    width: 1000px;
+	    @include display(block);
+	    margin: 0 auto;
+	}
+	.jk_logo {//子级2
+	    @include display(block);
+	    float: left;
+	    width: 109px;
+	    height: 40px;
+	    margin-top: 10px;
+	    border: 0 none;
+	}
+	.header_nav {//子级3
+	    line-height: 30px;
+	    margin-left: 20px;
+	    @include display(inline-block);
+	    width: 450px;
+	    height: 60px;
+	}
+}
+
+
+.header_nav a {
+    color: $jikecolor;
+}
+
+.header_nav li {
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 50px;
+    cursor: pointer;
+    height: 60px;
+    float: left;
+}
+
+
+.Public_area{//login_area下公共的
+	display: inline-block;
+    width: 17px;
+    height: 60px;
+}
+
+
+.login_area {//父级
+    float: right;
+    text-align: right;
+    width: 200px;
+    height: 60px;
+    margin-right: 10px;
+    margin-top: 22px;
+    .serach {//子级1
+	    @extend .Public_area;
+	    background: url(../images/search-icon.png) 0 0 no-repeat;
+	    background-size: 17px 17px;
+}
+
+	.app {//子级2
+	    @extend .Public_area;
+	    background: url(../images/app-icon.png) 0 0 no-repeat;
+	    background-size: 17px 17px;
+	}
+
+	.vip {//子级3
+	    @extend .Public_area;
+	    width: 25px;
+	    background: url(../images/default.gif) 0 0 no-repeat;
+	    background-size: 25px 25px;
+	}
+}
+
+.login_area span {
+    margin-left: 25px;
+}
+/*头部 end*/
+
+
+
+
+/*中间*/
+
+.main {
+    padding-top: 20px;
+    position: relative;
+    @include wh(100%,2220px);
+    background-color: #f5f5f5;
+}
+
+.main_warpper {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.jk_banner {
+    float: left;
+    @include wh(750px,330px);
+}
+
+.jk_banner_container {
+    @include wh(750px,330px);
+    background-color: blue;
+}
+
+.Arrow{//箭头公共的
+	width: 50px;
+    height: 80px;
+    position: relative;
+    top: 50%;
+    left: 0;
+    margin-top: -40px;
+    z-index: 2;
+    cursor: pointer;
+    background: url(../images/arrow.png) no-repeat center;
+}
+
+.left_arrow {
+    @extend .Arrow;
+    float: left;
+  
+}
+
+.right_arrow {
+    @extend .Arrow;
+    float: right;
+    -webkit-transform: rotate(180deg)
+}
+
+
+/*banner*/
+
+.banner {
+    height: 330px;
+    background-image: url(../images/banner1.jpg);
+}
+
+.jk_menber {
+    margin: 0 0 0 10px;
+    float: left;
+    @include wh(240px,160px);
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+
+/*就业班*/
+
+.jk_activity {
+    margin: 10px 0 0 10px;
+    display: inline-block;
+    @include wh(240px,160px);
+    background: url(../images/activity.jpg) 0 0 no-repeat;
+}
+
+.Employment_class {
+    margin: 0 auto;
+    @include wh(1000px,170px);
+}
+
+.Empliyment_class_warpper {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Employment_class a {
+    margin: 5px 4px 5px 0;
+    border: 1px solid $jikecolor;
+    @include wh(327px,72px);
+    display: inline-block;
+    background-color: $bg;
+}
+
+.Public_Employment_bg{
+	border: 0;
+    height: 72px;
+    background-size: 328px 73px;
+}
+
+
+.Employment_bg1 {
+    @extend .Public_Employment_bg;
+    background: url(../images/1.jpg) no-repeat center center;
+}
+
+.Employment_bg2 {
+    @extend .Public_Employment_bg;
+    background: url(../images/2.jpg) no-repeat center center;
+}
+
+.Employment_bg3 {
+    @extend .Public_Employment_bg;
+    background: url(../images/3.jpg) no-repeat center center;
+}
+
+.Employment_bg4 {
+    @extend .Public_Employment_bg;
+    background: url(../images/4.jpg) no-repeat center center;
+}
+
+.Employment_bg5 {
+    @extend .Public_Employment_bg;
+    background: url(../images/5.jpg) no-repeat center center;
+}
+
+.Employment_bg6 {
+    @extend .Public_Employment_bg;
+    background: url(../images/6.jpg) no-repeat center center;
+}
+
+.Employment_class img {
+    padding-top: 6px;
+    padding-left: 12px;
+    float: left;
+}
+
+.Employment_class p {
+    font-size: 16px;
+    color: $bg;
+    padding-left: 48px;
+    line-height: 36px;
+    float: left;
+}
+
+
+/*课程*/
+
+
+.jk_class {
+    @include wh(1000px,270px);
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.jk_class ul {
+    @include wh(100%,100%);
+}
+
+.jk_class ul li {
+    font-size: 0;
+    float: left;
+    width: 233px;
+    margin-right: 20px;
+    border: 1px solid #e9e9e9;
+    list-style: none;
+}
+
+.jk_class ul li:last-child {
+    margin-right: 0;
+}
+
+.jk_class ul li img {
+    vertical-align: middle;
+    @include wh(100%,155px);
+}
+
+.jk_class ul li div p {}
+
+.jk_class ul li .jk_class_Container {
+    padding: 14px;
+    height: 87px;
+    position: relative;
+    background: #fff;
+}
+
+.jk_class ul li .jk_class_item {
+    width: 100%;
+    font-size: 12px;
+    color: #555;
+    line-height: 0px;
+    height: 14px;
+}
+
+.jk_class ul li .jk_class_hours {
+    margin-top: 6px;
+    color: #999;
+    font-size: 12px;
+    line-height: 32px;
+    height: 0px;
+}
+
+.jk_class ul li .jk_class_Price {
+    float: left;
+    font-size: 18px;
+    color: #ff5c00;
+    vertical-align: bottom;
+    margin-right: 5px;
+    margin-top: 18px;
+}
+
+.jk_class ul li .jk_class_discount {
+    float: left;
+    font-size: 12px;
+    color: #999;
+    margin-top: 22px;
+    text-decoration: line-through;
+    vertical-align: bottom;
+}
+
+.jk_class ul li .jk_class_studymenber {
+    display: inline-block;
+    height: 14px;
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    color: #999;
+    font-size: 12px;
+}
+
+
+/*职业学院*/
+
+.Vocational_College_container ul li {
+    margin-left: 10px;
+    float: left;
+}
+
+.Vocational_College_container ul li a {
+    position: relative;
+    display: inline-block;
+    @include wh(100%,100%);
+}
+
+.Vocational_College img {
+    display: inline-block;
+}
+
+.Vocational_College span {
+    color: $bg;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.Vocational_College_container {
+    position: relative;
+    @include wh(1000px,310px);
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.language_Web {
+    @include wh(500px,270px);
+    background-size: 55px 84px;
+}
+
+.language_Web img {
+    display: inline-block;
+    width: 500px;
+    height: 270px;
+}
+
+.w240h130 {
+  	width: 240px;
+	height: 130px;
+}
+
+.language_python {
+    @extend .w240h130;
+    margin-bottom: 10px;
+}
+
+.language_python img {
+    display: inline-block;
+    @extend .w240h130;
+}
+
+.language_go {
+    @extend .w240h130;
+    margin-bottom: 10px;
+}
+
+.language_go img {
+    display: inline-block;
+    @extend .w240h130;
+}
+
+.language_ios {
+    @extend .w240h130;
+    margin-bottom: 10px;
+}
+
+.language_ios img {
+    display: inline-block;
+    @extend .w240h130;
+}
+
+.language_more {
+    @extend .w240h130;
+    float: left;
+    margin-left: 0;
+}
+
+.language_more img {
+    display: inline-block;
+    @extend .w240h130;
+}
+
+
+
+.language_Web a i {
+    width: 55px;
+    height: 84px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -27px;
+    margin-top: -62px;
+    background-image: url(../images/web.png);
+    background-size: 55px 84px;
+}
+
+.language_Web span {
+    padding-top: 180px;
+    font-size: 20px;
+}
+
+
+
+.Public_img{//职业学院下公共的img
+	width: 36px;
+    height: 36px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -18px;
+    margin-top: -32px;
+    background-size: 36px 36px;
+}
+
+.language_python a i {
+    @extend .Public_img;
+    background-image: url(../images/python.png);
+}
+
+.language_python span {
+    font-size: 14px;
+    padding-top: 88px;
+}
+
+.language_go a i {
+    @extend .Public_img;
+    background-image: url(../images/go.png);
+}
+
+.language_go span {
+    font-size: 14px;
+    padding-top: 88px;
+}
+
+
+.language_ios a i {
+    @extend .Public_img;
+    background-image: url(../images/ios.png);
+}
+
+.language_ios span {
+    font-size: 14px;
+    padding-top: 88px;
+}
+
+.language_more a i {
+    @extend .Public_img;
+    background-image: url(../images/more.png);
+}
+
+.language_more span {
+    font-size: 14px;
+    padding-top: 88px;
+}
+
+
+/*职业学院end*/
+
+
+/*会员课程*/
+
+.vip_course {
+    @include wh(1000px,356px);
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.vip_course ul {
+    @include wh(100%,310px);
+}
+
+.vip_course ul li {
+    float: left;
+    @include wh(156px,150px);
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    margin-right: 10px;
+}
+
+.vip_course ul li a span {
+    display: block;
+    font-size: 12px;
+    color: $jikecolor;
+    height: 22px;
+    line-height: 22px;
+}
+
+.vip_course ul li a p {
+    font-size: 12px;
+    color: #555;
+    height: 22px;
+    line-height: 12px;
+}
+
+.vip_course ul li a img {
+    display: inline-block;
+    @include wh(55px,55px);
+    margin-top: 25px;
+}
+
+.vip_course ul li a {
+    display: block;
+    height: 100%;
+    text-align: center;
+}
+
+.vip_course ul li:nth-child(n+7) {
+    margin-top: 10px;
+}
+
+.vip_course ul li:nth-child(6) {
+    margin-right: 0;
+}
+
+.vip_course ul li:last-child {
+    margin-right: 0;
+}
+
+.all_course {
+    display: inline-block;
+    height: 32px;
+    line-height: 30px;
+    border: 1px solid $jikecolor;
+    border-radius: 2px;
+    width: 120px;
+    font-size: 14px;
+    color: $jikecolor;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    margin-left: -60px;
+    -webkit-transition: background .8s;
+}
+
+.all_course:hover {
+    background-color: $jikecolor;
+    color: $bg;
+}
+
+
+/*会员课程end*/
+
+
+/*学员故事*/
+
+.Student_story {
+    @include wh(1000px,300px);
+    margin: 0 auto;
+}
+
+.stroy_container {
+    @include wh(1000px,260px);
+}
+
+.Student_story ul {
+    @include wh(1000px,200px);
+}
+
+.Student_story ul li {
+    float: left;
+    @include wh(320px,200px);
+    position: relative;
+    margin-right: 20px;
+}
+
+.Student_story ul li:last-child {
+    margin-right: 0;
+}
+
+.student_photo {
+    height: 80px;
+    position: relative;
+}
+
+.story_content {
+    width: 100%;
+    height: 118px;
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    position: relative;
+}
+
+.story_content p {
+    height: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    color: #555;
+    line-height: 20px;
+    padding: 12px 28px !important;
+    text-align: left;
+}
+
+
+@mixin whlt ($width,$height,$left,$top) {
+	position:absolute;
+    width: $width;
+    height: $height;
+    left: $left;
+    top: $top;
+}
+
+
+
+
+.story_content i {
+    display: block;
+    @include whlt(14px,10px,10px,10px);
+    background-image: url(../images/yh.png);
+    background-size: 14px 10px;
+}
+
+.story_content .i1 {
+    display: block;
+    @include whlt(14px,10px,100px,296px);
+    background-image: url(../images/yh.png);
+    background-size: 14px 10px;
+    -webkit-transform: rotate(180deg);
+}
+
+.Student_story img {
+	@include whlt(60px,60px,20px,20px);
+    border-radius: 50%;
+    border: 1px solid #e9e9e9;
+}
+
+.student_photo {
+    height: 80px;
+    position: relative;
+}
+
+.student_photo p {
+    position: absolute;
+    top: 20px;
+    left: 94px;
+    font-size: 12px;
+    color: #555;
+}
+
+.Student_story span {
+    top: 57px;
+    left: 92px;
+    position: absolute;
+    color: #999;
+    font-size: 12px;
+}
+
+
+/*学员故事end*/
+
+
+/*合作企业*/
+
+.cooperation {
+	@include wh(1000px,240px);
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.cooperation ul li {
+    float: left;
+    @include wh(148px,50px);
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    margin-right: 20px;
+}
+
+.cooperation ul li:nth-child(6),
+.cooperation ul li:last-child {
+    margin-right: 0;
+}
+
+.cooperation ul li:nth-child(n+7) {
+    margin-top: 20px;
+}
+
+.more_partner {
+    display: inline-block;
+    margin-top: 38px;
+    height: 32px;
+    line-height: 30px;
+    border: 1px solid $jikecolor;
+    border-radius: 2px;
+    width: 120px;
+    font-size: 14px;
+    color: $jikecolor;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    margin-left: -60px;
+    -webkit-transition: background .8s;
+}
+
+.more_partner:hover {
+    background-color: $jikecolor;
+    color: $bg;
+}
+
+.cooperation ul li a {
+    display: block;
+    height: 100%;
+}
+
+.cooperation ul li:nth-child(1) a {
+    background: url(../images/C1.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(2) a {
+    background: url(../images/C2.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(3) a {
+    background: url(../images/C3.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(4) a {
+    background: url(../images/C4.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(5) a {
+    background: url(../images/C5.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(6) a {
+    background: url(../images/C6.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(7) a {
+    background: url(../images/C7.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(8) a {
+    background: url(../images/C8.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(9) a {
+    background: url(../images/C9.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(10) a {
+    background: url(../images/C10.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(11) a {
+    background: url(../images/C11.png) no-repeat center;
+}
+
+.cooperation ul li:nth-child(12) a {
+    background: url(../images/C12.png) no-repeat center;
+}
+
+
+/*合作企业end*/
+
+
+/*中间 end*/
+
+
+/*底部*/
+
+.footer {
+    position: relative;
+    min-width: 1000px;
+    border-top: 1px solid #e4e4e4;
+}
+
+.jk_logo2 {
+    position: absolute;
+    
+    left: -220px;
+}
+
+.jk_logo2 p {
+    width: 160px;
+    text-align: left;
+     line-height: 0;
+    font-size: 12px;
+    color: #999;
+}
+
+.jk_logo2 img {
+    width: 109px;
+    height: 40px;
+}
+
+.more_link {
+    position: relative;
+    width: 100%;
+}
+
+.more_link ul {
+    position: relative;
+    left: 50%;
+    margin-left: -225px;
+    margin-top: 20px;
+    width: 650px;
+    height: 180px;
+    background-color: $bg;
+}
+
+.more_link ul li {
+    float: left;
+    width: 135px;
+    height: 30px;
+    border: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+    line-height: 30px;
+}
+
+.more_link ul li a {
+    font-size: 12px;
+    color: #999999;
+}
+
+.more_link ul li a:hover {
+    font-size: 12px;
+    color: $jikecolor;
+}
+
+.more_link ul li:nth-child(n+26) {
+    margin-top: 120px;
+}
+
+.more_link ul li span {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer .copyright {
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.more_link ul li:nth-child(1){
+	  text-align: left;
+}
+
+/*底部end*/

@@ -1,0 +1,115 @@
+* {
+    letter-spacing: 0px;
+    font-size: 12px;
+    font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, SimHei;
+}
+
+
+
+#loginandregister a{
+margin-left:10px
+}
+
+#qingdaoimages {
+    margin-top: -80px;
+    margin-left: 30px;
+    position: absolute;
+}
+
+#teachtime {
+    margin: 2px;
+}
+
+.captionheader {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#job {
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+#job2 {
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+body {
+    background-image: url(../img/bg.png);
+}
+
+.register2 .selection_border tr td {
+    border: 0px;
+}
+
+.flot_right {
+    text-align: right;
+    float: right;
+}
+
+.weight {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.blue2 {
+    color: rgb(0, 51, 153);
+    font-weight: bold;
+}
+
+.blue {
+    color: #0000ff;
+}
+
+.red {
+    color: red;
+}
+
+.radius {
+    font-size: 0px;
+}
+
+.radius2 {
+    font-size: 0px;
+}
+
+td input {
+    border: 1px solid #a5a5a5;
+    padding: 0px;
+    margin-left: 2px;
+}
+
+caption {
+    height: 60px;
+}
+
+.center_container {
+    width: 710px;
+    margin: 0 auto;
+}
+
+td {
+    line-height: 150%;
+    text-decoration: none;
+}
+
+table {
+    font-size: 12px;
+    color: #000000;
+    border-collapse: collapse;
+}
+
+.register2 tr td {
+    background-color: #ffffff;
+    border: 1px solid #a5a5a5;
+}
+
+select {
+    margin-left: 2px;
+}
+
+textarea {
+    margin-left: 2px;
+    margin-top: 2px;
+}

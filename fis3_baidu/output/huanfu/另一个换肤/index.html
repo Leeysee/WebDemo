@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>jQuery仿百度首页换肤功能代码 - 绘艺素材</title><style type="text/css">*{margin:0;padding:0}
+  a{color:#fff;
+    margin-top:10px;
+	display:block;
+	margin-left:18%;
+	font-size:13px;
+	position:absolute;
+    }
+    body{background:url(/huanfu/另一个换肤/images/bg0_4b0b078.jpg);}
+	.con{width:911px;
+	     height:317px;
+		 margin:50px auto;}
+    .head{width:100%;
+	      height:0px;
+		  background:#fff;
+		  position:fixed;
+		  left:0px;
+		  top:0px;
+		  border-bottom:1px solid #e3e3e3;
+		  overflow:hidden;
+		  }
+	.title{width:911px;
+	       height:45px;
+		   margin:0px auto;}	  
+	.heitiao{width:100%;
+	         height:35px;
+			 background:rgba(0,0,0,0.7);
+			 }
+	.menu{width:100%;
+	      height:45px;
+		  border-bottom:1px solid #e3e3e3;}
+	.p1{width:861px;
+	    height:45px;
+		background:url(/huanfu/另一个换肤/images/p1_a4c268a.png);
+		float:left;
+		cursor:pointer;}
+    .p2{width:50px;
+	    height:45px;
+		background:url(/huanfu/另一个换肤/images/sp_2ca91fb.png);
+		float:right;
+		cursor:pointer;
+		}
+    .bg{width:911px;
+	    height:205px;
+		margin:25px auto;}
+	.bgcon{width:590px;
+	       height:190px;
+		   float:left;
+		   }
+    .bgcon img{width:97px;
+	           height:59px;
+		       display:block;
+			   float:left;
+			   margin-right:1px;
+			   margin-bottom:1px;
+			   }
+	.bgcon .big{width:195px;
+	            height:119px;}
+	.bgcon .last{position:relative;
+	             top:-60px;
+				 }
+	.bgyl{width:264px;
+	      height:180px;
+		  float:right;
+		  background:url(/huanfu/另一个换肤/images/bg1s_37a39f2.jpg);
+		  background-size:294px;}</style></head><body><a href="#">换肤</a><div class="heitiao"></div><div class="con"><img src="/huanfu/另一个换肤/images/content_fb6ec9d.png"></div><div class="head"><div class="menu"><div class="title"><p class="p1"></p><p class="p2"></p></div><div class="bg"><div class="bgcon"><img class="big" src="/huanfu/另一个换肤/images/bg0s_f6e46c6.jpg"> <img src="/huanfu/另一个换肤/images/bg1s_37a39f2.jpg"> <img src="/huanfu/另一个换肤/images/bg2s_bd709dd.jpg"> <img src="/huanfu/另一个换肤/images/bg3s_afd0041.jpg"> <img src="/huanfu/另一个换肤/images/bg4s_a32c0fa.jpg"> <img src="/huanfu/另一个换肤/images/bg5s_e8700bc.jpg"> <img class="big" src="/huanfu/另一个换肤/images/bg6s_983de92.jpg"> <img src="/huanfu/另一个换肤/images/bg7s_99ff062.jpg"> <img src="/huanfu/另一个换肤/images/bg8s_dda5c82.jpg"> <img class="last" src="/huanfu/另一个换肤/images/bg9s_4da9972.jpg"> <img class="last" src="/huanfu/另一个换肤/images/bg10s_0f251cd.jpg"> <img class="last" src="/huanfu/另一个换肤/images/bg11s_c4777b8.jpg"></div><div class="bgyl"><img src="/huanfu/另一个换肤/images/yl_062cd61.png"></div></div></div></div><script type="text/javascript" src="/huanfu/另一个换肤/js/jquery_7e57d31.js"></script><script type="text/javascript">var i=1;
+          $("a").click(function(){
+			  $(".head").animate({height:"288px"},500);
+			  });
+          $(".p2").click(function(){
+			  $(".head").animate({height:"0px"},500);
+			  });
+		  $(".bgcon img").hover(function(){
+			  i=$(this).index();
+		      $(".bgyl").css("background",'url(images/bg'+i+'.jpg)');
+			  $(".bgyl").css("background-size","264px 180px");
+			  });
+	      $(".bgcon img").click(function(){
+			  $("body").css("background",'url(images/bg'+i+'.jpg)');
+			  });</script><div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei'"><p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗.</p><p>来源：<a href="http://www.huiyi8.com/" target="_blank">绘艺素材</a></p></div></body></html>
